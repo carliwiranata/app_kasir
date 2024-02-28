@@ -8,17 +8,17 @@
     <div class="card shadow mb-4">
         <div class="card-header py-3">
             <h6 class="m-0 font-weight-bold text-primary">Data Penjualan</h6>
-            <a href="<?= base_url('petugas/cetak/' . $penjualan[1]['id_penjualan']) ?>" class="btn btn-primary float-right" target="_blank" rel="noopener noreferrer"><i class="fas fa-print"></i> Cetak</a>
+            <a href="<?= base_url('petugas/cetak/' . $penjualan[0]['id_penjualan']) ?>" class="btn btn-primary float-right" target="_blank" rel="noopener noreferrer"><i class="fas fa-print"></i> Cetak</a>
         </div>
         <div class="card-body">
             <div class="table-responsive">
                 <table class="table table-bordered" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th colspan="4">ID Penjualan : <?= $penjualan[1]['id_penjualan'] ?></th>
+                            <th colspan="4">ID Penjualan : <?= $penjualan[0]['id_penjualan'] ?></th>
                         </tr>
                         <tr>
-                            <th colspan="4">Nama Pelanggan : <?= $penjualan[1]['nama'] ?></th>
+                            <th colspan="4">Nama Pelanggan : <?= $penjualan[0]['nama'] ?></th>
                         </tr>
                         <tr>
                             <th>No</th>
@@ -47,11 +47,11 @@
                         </tr>
                         <tr>
                             <th colspan="3">Bayar</th>
-                            <th>Rp <?= number_format($penjualan[1]['bayar'], 0, ',', '.')  ?></th>
+                            <th>Rp <?= number_format($penjualan[0]['bayar'], 0, ',', '.')  ?></th>
                         </tr>
                         <tr>
                             <th colspan="3">Kembalian</th>
-                            <th>Rp <?= number_format($penjualan[1]['bayar'] - $total, 0, ',', '.') ?></th>
+                            <th>Rp <?= number_format($penjualan[0]['bayar'] - $total, 0, ',', '.') ?></th>
                         </tr>
                     </tbody>
                 </table>

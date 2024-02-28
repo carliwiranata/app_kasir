@@ -33,10 +33,10 @@
 <body>
     <table border="1" cellpadding="10" cellspacing="0">
         <tr>
-            <th class="text-left" colspan="4">ID Penjualan : <?= $penjualan[1]['id_penjualan'] ?></th>
+            <th class="text-left" colspan="4">ID Penjualan : <?= $penjualan[0]['id_penjualan'] ?></th>
         </tr>
         <tr>
-            <th class="text-left" colspan="4">Nama Pelanggan : <?= $penjualan[1]['nama'] ?></th>
+            <th class="text-left" colspan="4">Nama Pelanggan : <?= $penjualan[0]['nama'] ?></th>
         </tr>
         <tr>
             <th>No</th>
@@ -63,11 +63,11 @@
         </tr>
         <tr>
             <th class="text-left" colspan="3">Bayar</th>
-            <th>Rp <?= number_format($penjualan[1]['bayar'], 0, ',', '.')  ?></th>
+            <th>Rp <?= number_format($penjualan[0]['bayar'], 0, ',', '.')  ?></th>
         </tr>
         <tr>
             <th class="text-left" colspan="3">Kembalian</th>
-            <th>Rp <?= number_format($penjualan[1]['bayar'] - $total, 0, ',', '.') ?></th>
+            <th>Rp <?= number_format($penjualan[0]['bayar'] - $total, 0, ',', '.') ?></th>
         </tr>
     </table>
 </body>

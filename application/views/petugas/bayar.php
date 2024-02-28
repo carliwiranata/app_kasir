@@ -14,10 +14,10 @@
                 <table class="table table-bordered" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th colspan="4">ID Penjualan : <?= $penjualan[1]['id_penjualan'] ?></th>
+                            <th colspan="4">ID Penjualan : <?= $penjualan[0]['id_penjualan'] ?></th>
                         </tr>
                         <tr>
-                            <th colspan="4">Nama Pelanggan : <?= $penjualan[1]['nama'] ?></th>
+                            <th colspan="4">Nama Pelanggan : <?= $penjualan[0]['nama'] ?></th>
                         </tr>
                         <tr>
                             <th>No</th>
@@ -44,7 +44,7 @@
                             <th colspan="3">Total Keseluruhan</th>
                             <th>Rp <?= number_format($total, 0, ',', '.')  ?></th>
                         </tr>
-                        <form action="<?= base_url('petugas/bayar/' . $penjualan[1]['id_penjualan']) ?>" method="post">
+                        <form action="<?= base_url('petugas/bayar/' . $penjualan[0]['id_penjualan']) ?>" method="post">
                             <tr>
                                 <th colspan="3">Bayar</th>
                                 <th><input type="number" class="form-control" name="bayar"></th>

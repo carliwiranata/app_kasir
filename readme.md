@@ -1,1 +1,1 @@
-# Aplikasi kasir berbasis website
+# Aplikasi kasir berbasis website Codeifniter 3
